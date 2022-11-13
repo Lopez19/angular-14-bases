@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './listado.component.html',
 })
 export class ListadoComponent {
-  constructor() {
-    console.log('constructor');
+  heroes: string[] = ['Goku', 'Vegeta', 'MaginBoo', 'Piccolo'];
+
+  heroeB: string = '';
+
+  borrarHeroe(): void {
+    this.heroeB = this.heroes.pop() || '';
   }
 }
