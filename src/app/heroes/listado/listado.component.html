@@ -1,8 +1,9 @@
 <p>listado works!</p>
 
-<div>
-  <h3>Heroe Borrado</h3>
-  <span>{{ heroeB }}</span>
+<div *ngIf="heroeB !== ''">
+  <h3>
+    Heroe Borrado: <small>{{ heroeB }}</small>
+  </h3>
 </div>
 
 <button (click)="borrarHeroe()">Borrar héroe</button>
