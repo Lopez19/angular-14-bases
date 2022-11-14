@@ -42,3 +42,19 @@ button:focus {
 .p-1 {
   padding: 1px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .col {
+    flex-grow: 1;
+    margin: 10px;
+  }
+}
+
+input {
+  display: block;
+  margin: 10px;
+}
